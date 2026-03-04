@@ -30,7 +30,7 @@ app.get("/status/:userId", async (req, res) => {
     // 2 Days tak
     return res.json({
       status: "AWAY",
-      message: "User is away for more than an hour",
+      message: "User is offline for a while,",
     });
   } else {
     return res.json({ status: "DEEP_OFFLINE" });
